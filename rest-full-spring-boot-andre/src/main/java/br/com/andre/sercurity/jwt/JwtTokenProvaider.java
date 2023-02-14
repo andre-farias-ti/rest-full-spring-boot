@@ -1,4 +1,4 @@
-package br.com.andre.sercurityJwt;
+package br.com.andre.sercurity.jwt;
 
 import java.util.Base64;
 import java.util.Date;
