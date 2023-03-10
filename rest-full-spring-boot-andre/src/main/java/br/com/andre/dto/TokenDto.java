@@ -1,4 +1,4 @@
-package dto;
+package br.com.andre.dto;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -25,6 +25,8 @@ public class TokenDto implements Serializable {
 		this.accessToken = accessToken;
 		this.refreshToken = refreshToken;
 	}
+
+	public TokenDto() {}
 
 	public String getUsername() {
 		return username;

@@ -1,3 +1,5 @@
+cors:
+  originPatterns: http://localhost:3000,http://localhost:8080,https://andre.com.br
 security:
   jwt:
     token:
@@ -15,7 +17,13 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect    
-      show-sql: false 
+      show-sql: false
+springdoc:
+  pathsToMatch:
+    - /auth/**
+    - /api/**/v1/**
+  swagger-ui:
+    use-root-path: true
 
             
       

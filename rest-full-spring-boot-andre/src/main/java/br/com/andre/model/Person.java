@@ -20,8 +20,8 @@ public class Person implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Column(name="frist_name", nullable = false, length = 80)
-	private String fristName;
+	@Column(name="first_name", nullable = false, length = 80)
+	private String firstName;
 	
 	@Column(name="last_name", nullable = false, length = 80)
 	private String lastName;
@@ -43,12 +43,12 @@ public class Person implements Serializable{
 		this.id = id;
 	}
 
-	public String getFristName() {
-		return fristName;
+	public String getFirstName() {
+		return firstName;
 	}
 
-	public void setFristName(String fristName) {
-		this.fristName = fristName;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 
 	public String getLastName() {
@@ -77,7 +77,7 @@ public class Person implements Serializable{
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(address, fristName, gender, id, lastName);
+		return Objects.hash(address, firstName, gender, id, lastName);
 	}
 
 	@Override
@@ -89,7 +89,7 @@ public class Person implements Serializable{
 		if (getClass() != obj.getClass())
 			return false;
 		Person other = (Person) obj;
-		return Objects.equals(address, other.address) && Objects.equals(fristName, other.fristName)
+		return Objects.equals(address, other.address) && Objects.equals(firstName, other.firstName)
 				&& Objects.equals(gender, other.gender) && Objects.equals(id, other.id)
 				&& Objects.equals(lastName, other.lastName);
 	}

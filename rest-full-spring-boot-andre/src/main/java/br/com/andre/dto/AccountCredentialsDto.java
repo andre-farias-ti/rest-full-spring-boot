@@ -1,4 +1,4 @@
-package dto;
+package br.com.andre.dto;
 
 import java.io.Serializable;
 import java.util.Objects;

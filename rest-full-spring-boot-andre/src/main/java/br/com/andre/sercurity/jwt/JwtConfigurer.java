@@ -10,10 +10,9 @@ public class JwtConfigurer extends
 		SecurityConfigurerAdapter<DefaultSecurityFilterChain, HttpSecurity>{
 
 	@Autowired
-	private JwtTokenProvaider tokenProvaider;
+	private JwtTokenProvider tokenProvaider;
 
-	public JwtConfigurer(JwtTokenProvaider tokenProvaider) {
-		super();
+	public JwtConfigurer(JwtTokenProvider tokenProvaider) {
 		this.tokenProvaider = tokenProvaider;
 	}
 
